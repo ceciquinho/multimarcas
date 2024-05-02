@@ -14,11 +14,6 @@ display: flex;
 
 }
 
-
-
-
-
-
 .container {
     max-width: 800px;
     margin: auto;
@@ -38,3 +33,72 @@ display: flex;
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    display: block;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: auto;
+    font-size: 20px;
+  }
+  
+  .carousel-control.prev {
+    left: 0;
+  }
+  
+  .carousel-control.next {
+    right: 0;
+  }
+  
+  .carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: auto;
+  }
+  
+  .indicator.active {
+    background-color: black;
+  }
+  .carousel-slide img {
+    max-width: 700px;
+    height: auto;
+  }
